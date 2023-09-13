@@ -1,0 +1,252 @@
+:root {
+  --header: #112D4E;
+  --footer: #3F72AF;
+  --body1: #1c97b2a8;
+  --body2: #DBE2EF;
+  --font1: #ffff;
+  --font2: #0000;
+  --font3: #61677A;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  margin: -0.2%;
+  background-color: var(--header);
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+header {
+  background-color: var(--header);
+  color: var(--font1);
+  height: 12rem;
+  width: 100%;
+  text-align: center;
+  line-height: 0.1rem;
+}
+
+.Top {
+  width: 100%;
+  height: 3rem;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  display: flex;
+}
+
+.nameSale {
+  margin: auto;
+  margin-top: 1.7rem;
+  margin-left: 0%;
+}
+
+.login {
+  align-content: end;
+  margin: auto;
+  margin-right: 1%;
+}
+
+.nav-login {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginB {
+  position: relative;
+  display: inline-block;
+  border: 1px solid var(--font1);
+  background-color: var(--header);
+  padding: 1rem 0.4rem;
+  color: var(--font1);
+  font-stretch: semi-condensed;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden
+}
+
+a:hover {
+  background: var(--footer);
+  color: #050801;
+  box-shadow: 0 0 5px var(--footer),
+    0 0 25px var(--footer),
+    0 0 50px var(--footer),
+    0 0 200px var(--footer);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.searchPanel {
+  padding: 2rem auto;
+  margin-bottom: 4rem;
+
+}
+
+.Bar {
+  width: 4rem;
+  transition: 1s;
+}
+
+.Bar:hover {
+  width: 20rem;
+}
+
+.centrar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navLinksMenu {
+  padding: auto;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.nav-header {
+  padding: auto;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks {
+  margin: 2rem auto;
+  border: 1px solid var(--font1);
+  background-color: var(--header);
+  padding: 1.8rem 0.5rem;
+  color: var(--font1);
+  float: inline-end;
+  font-stretch: semi-condensed;
+  transition: 0.7s;
+  overflow: hidden
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+.clearFix {
+  clear: both;
+}
+
+.main {
+  background-color: var(--body2);
+  margin: 2rem 0.1rem;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.companyHeading{
+  font-weight: 600;
+  font-size: 3.25rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  color: var(--font3); 
+}
+ul {
+  list-style: none;
+}
+
+.company-cards{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-flow: column;
+}
+
+.cards__card{
+  grid-auto-flow: column;
+}
+.cards {
+  position: relative;
+}
+
+.cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 98%;
+  margin: auto;
+}
+
+.card {
+  --flow-space: 0.5rem;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 14rem;
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1.25rem;
+  color: var(--font1);
+  background-color: var(--footer);
+  border: 1px solid var(--header);
+  border-radius: 15px;
+}
+.card:nth-child(1) {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+
+.card:nth-child(2) {
+  --hue: 291.34;
+  --saturation: 95.9%;
+  --lightness: 61.76%;
+}
+
+.card:nth-child(3) {
+  --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
+
+.card__bullets {
+  line-height: 1.4;
+}
+
+.card__bullets li::before {
+  display: inline-block;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+  transform: translatey(0.25ch);
+  margin-right: 1ch;
+}
+
+.card__heading {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
+
+.cta {
+  display: block;
+  align-self: end;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d0d0d;
+  padding: 0.7em;
+  transition: 0.5s;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cta:hover{
+  color: #050801;
+  box-shadow: 0 0 5px black,
+    0 0 25px black,
+    0 0 50px black,
+    0 0 200px black;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
