@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     host:'localhost',
     database:'db_multisales',
     user:'root',
-    password:'';
+    password:''
 });
 
 connection.connect(function(error){
@@ -17,5 +17,3 @@ connection.connect(function(error){
     }
     console.log('conectado', connection.threadId);
 });
-
-app.
