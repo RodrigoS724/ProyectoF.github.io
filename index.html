@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="Top">
+            <div class="logoimg">
+                <img src="../img/logo.png" width="60">
+            </div>
+            <div class="nameSale">
+                <h3 class="nameSale">Multisale</h3>
+            </div>
+
+            <div class="login">
+                <nav class="nav-login">
+                    <a href="#" class="loginB">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Conectar</a>
+                    <a href="#" class="loginB">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Registar</a>
+                </nav>
+            </div>
+
+        </div>
+        <div class="searchPanel center">
+            <p>
+                <input type="text" name="SearchBar" placeholder="buscar" class="Bar" autocomplete="off">
+                <button type="buttonSearch"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-zoom-filled" width="10" height="10" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M14 3.072a8 8 0 0 1 2.617 11.424l4.944 4.943a1.5 1.5 0 0 1 -2.008 2.225l-.114 -.103l-4.943 -4.944a8 8 0 0 1 -12.49 -6.332l-.006 -.285l.005 -.285a8 8 0 0 1 11.995 -6.643z"
+                            stroke-width="0" fill="currentColor" />
+                    </svg></button>
+            </p>
+        </div>
+        <div class="navLinksMenu center" id="menu">
+            <nav class="nav-header">
+                <a href="#" class="navLinks">Inicio</a>
+                <a href="#" class="navLinks">Compañia</a>
+                <a href="#" class="navLinks">Productos</a>
+                <a href="#" class="navLinks">Servicios</a>
+                <a href="#" class="navLinks">Contacto</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="main flow center">
+        <div>
+            <h2 class="companyHeading">compañias mas visitadas</h2>
+        </div>
+        <div class="company__cards cards" id="companyCards">
+            <div class="cards__inner" id="cardCompany">
+                <div class="cards__card card">
+                    <h2 class="card__heading" id="nameCompany">Compañia</h2>
+                    <ul role="list" class="card__bullets flow">
+                        <li id="descriptionCompany">Esta compañia ofrece cosas como tal y tal cual</li>
+                        <li id="addressCompany">Paysandu,Uruguay</li>
+                    </ul>
+                    <a href="#basic" class="card__cta cta">Ver</a>
+                </div>
+                <script>
+                    (function myFunction() {
+                        const h2 = document.getElementById("cardCompany");
+                        let html = '<div class="cards__card card"><h2 class="card__heading"id="nameCompany">Compañia</h2><ul role="list" class="card__bullets flow"><li id="descriptionCompany">Esta compañia ofrece cosas como tal y tal cual</li><li id="addressCompany">Paysandu,Uruguay</li></ul><a href="#basic" class="card__cta cta">Ver</a></div>';
+
+                        for (let index = 0; index < 4; index++) {
+                            h2.insertAdjacentHTML("beforeend", html);
+                        }
+                    })();
+                </script>
+            </div>
+
+        </div>
+    </main>
+
+    <aside>
+
+    </aside>
+    <footer>
+    </footer>
+</body>
+
+</html>
