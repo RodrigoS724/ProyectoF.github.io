@@ -65,32 +65,17 @@
     </header>
 
     <main class="main flow center">
-        <div>
-            <h2 class="companyHeading">compañias mas visitadas</h2>
-        </div>
-        <div class="company__cards cards" id="companyCards">
-            <div class="cards__inner" id="cardCompany">
-                <div class="cards__card card">
-                    <h2 class="card__heading" id="nameCompany">Compañia</h2>
-                    <ul role="list" class="card__bullets flow">
-                        <li id="descriptionCompany">Esta compañia ofrece cosas como tal y tal cual</li>
-                        <li id="addressCompany">Paysandu,Uruguay</li>
-                    </ul>
-                    <a href="#basic" class="card__cta cta">Ver</a>
-                </div>
-                <script>
-                    (function myFunction() {
-                        const h2 = document.getElementById("cardCompany");
-                        let html = '<div class="cards__card card"><h2 class="card__heading"id="nameCompany">Compañia</h2><ul role="list" class="card__bullets flow"><li id="descriptionCompany">Esta compañia ofrece cosas como tal y tal cual</li><li id="addressCompany">Paysandu,Uruguay</li></ul><a href="#basic" class="card__cta cta">Ver</a></div>';
-
-                        for (let index = 0; index < 4; index++) {
-                            h2.insertAdjacentHTML("beforeend", html);
-                        }
-                    })();
-                </script>
+        <div class="CompanysContainer">
+            <div>
+                <h2 class="companyHeading">compañias mas visitadas</h2>
             </div>
-
+            <div class="company__cards cards" id="companyCards">
+                <div class="cards__inner" id="cardCompany"></div>
+                <script src="scripts/cargarArticulos.js"></script>
+            </div>
         </div>
+        </div>
+
     </main>
 
     <aside>
