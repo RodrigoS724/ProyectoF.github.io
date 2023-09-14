@@ -243,3 +243,10 @@ ul {
     0 0 200px black;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
+
+.footer{
+  background-color: var(--footer);
+  width: 99%;
+  margin: auto;
+  height: 15rem;
+}
