@@ -9,13 +9,10 @@ let textoEnHTML = [
 
 function nextText() {
     let textoCard = document.getElementById('texto');
-    console.log(textoCard.textContent)
-    let position = -1
+    let position = -1;
+    if(textoCard.textContent!="Que sos lo mejor que me ha pasado"){
     for (let i = 0; i < textoEnHTML.length; i++) {
-        console.log(i)
-        console.log(textoCard.textContent === textoEnHTML[i])
         if (textoCard.textContent === textoEnHTML[i]) {
-            console.log("entre")
             if (i + 1 < 6) {
                 position = i
             }else{
@@ -25,4 +22,13 @@ function nextText() {
     }
     document.getElementById('texto').innerHTML = ""
     document.getElementById('texto').innerHTML = "<p id='texto'>" + textoEnHTML[position + 1] + "</p>"
+}else{
+    const esteBoton = document.getElementById('boton');
+    document.getElementById('boton').innerHTML = "ESTA YA ES LA ULTIMAAA"
+    esteBoton.disable = true;
+    esteBoton.onclick = "";
+    document.getElementById('texto').innerHTML = "<p id='texto'>" + "TE AMOOOOO" + "</p>"
+    console.log(esteBoton)
+}
+    
 }
